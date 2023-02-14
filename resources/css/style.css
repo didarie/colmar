@@ -23,6 +23,8 @@ a {
 
 p{
     color: gray;
+    line-height: 1.5rem;
+    font-weight: lighter;
 }
 
 .container {
@@ -287,6 +289,7 @@ header{
         display: flex;
         flex-direction: column;
         border: 0;
+        padding-bottom: 1rem;
     }
 
     .list-about .text{
@@ -359,7 +362,7 @@ header{
         background-color: white;
         padding: 2rem 1rem 2rem;
     }
-    
+
     .mobile-options{
         display: flex;
         flex-direction: column;
@@ -376,5 +379,81 @@ header{
         background-color: cadetblue;
     }
 
+    .courses h1{ 
+        margin-bottom: 1rem;
+    }
+
     
+}
+
+/* Exhibit */
+
+.exhibit .container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-column-gap: 1.5rem;
+}
+
+.exhibit .thesis{
+    margin: 2rem;
+    text-align: center;
+}
+
+.urban video{
+    width: 100%;
+}
+
+.urban .text-urban h1{
+    margin: 2rem 0 1.5rem;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    padding-right: 1.5rem;
+    border-left: 0.5px solid lightgrey;
+}
+
+.new{
+    display: inline-flex;
+    border-top: 0.5px solid lightgrey;
+    border-bottom: 0.5px solid lightgrey;
+    margin-top: 1px;
+}
+
+.new img{
+    width: 35%;
+    margin: 1rem;
+}
+
+.new .text-new{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 65%;
+    font-weight: lighter;
+}
+
+.new .text-new p{
+    margin-top: 0.5rem;
+}
+
+.new:hover{
+    background-color: lightgray;
+}
+
+@media only screen and (max-width: 800px){
+    .news, .text-urban{
+        display: none;
+    }
+
+    .exhibit .container{
+        display: block;
+        padding: 0;
+    }
+
+    .exhibit .thesis{
+        margin-bottom: 1rem;
+    }
 }
