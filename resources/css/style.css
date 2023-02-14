@@ -11,7 +11,6 @@ html {
     color: #4a4a4a;
 }
 
-
 ul,
 li {
     list-style: none;
@@ -32,6 +31,8 @@ p{
     padding: 0 24px;
     margin: 0 auto;
 }
+
+/* Header */ 
 
 header{
     height: 2rem;
@@ -86,6 +87,8 @@ header{
         justify-content: space-between;
     }
 }
+
+/* Banner */
 
 .banner .container{
     display: flex;
@@ -166,6 +169,15 @@ header{
         font-size: 1rem;
         font-weight: bold;
     }
+
+    .banner button:hover{
+        background-color: darkgray;
+        transition: none;
+    }
+
+    .banner button:active{
+        background-color: cadetblue;
+    }
     
 } 
 
@@ -175,6 +187,8 @@ header{
     }
 
 }
+
+/* Info */
 
 .info .container{
     display: grid;
@@ -245,7 +259,7 @@ header{
 }
 
 .list-about:hover{
-    border: 2px solid cadetblue;   
+    background-color: lightgray;
 }
 
 @media only screen and (max-width: 800px){
@@ -281,11 +295,86 @@ header{
     }
 
     .list-about:hover{
-        border: none;   
+        background-color: white;   
     }
 
-    .list-about .text a:active{
-        color:black;
+}
+
+/* Courses */
+
+.courses .container{
+    background-color: lightgray;
+    padding: 2rem 4.5rem;
+}
+
+.courses h1{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.mobile-options{
+    display: none;
+}
+
+.courses .laptop-options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.option{
+    width: 30%;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.option img{
+    width: 100%;
+}
+
+.option .text-option{
+    margin: 1rem;
+    font-weight: lighter;
+}
+
+.option .text-option h2{
+    padding-bottom: 0.5rem;
+}
+
+.option .text-option p{
+    padding-top: 0.5rem;
+    line-height: 1.5rem;
+}
+
+.option .text-option:hover{
+    color: cadetblue;
+}
+
+@media only screen and (max-width: 800px){
+    .courses .laptop-options{
+        display: none;
     }
 
+    .courses .container{
+        background-color: white;
+        padding: 2rem 1rem 2rem;
+    }
+    
+    .mobile-options{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-options h2{
+        background-color: lightgrey;
+        padding: 1.5rem 1rem;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+    }
+
+    .mobile-options h2:active{
+        background-color: cadetblue;
+    }
+
+    
 }
